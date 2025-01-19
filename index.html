@@ -45,14 +45,27 @@
         <body>
 
             <div class="clicker" onclick="location.href='1.html'">
-                <img src="pngegg.png" style="width: 10%;"> 
+                <img src="pngegg.png" style="width: 10%;" alt="Clickable Image" onmouseover="playSound()">
             </div>
+        
+            <!-- Sound element -->
+            <audio id="hoverSound" src="booksound.wav"></audio>
+        
+            <script>
+                // Play sound function
+                function playSound() {
+                    const sound = document.getElementById("hoverSound");
+                    sound.currentTime = 0; // Reset sound to start
+                    sound.play();
+                }
+            </script>
 
             <div style="position: relative; display: inline-block;">
-                <a href="https://zippy-faloodeh-cad9b6.netlify.app/dressistz_closet" target="_blank" style="text-decoration: none;">
+                <a href="https://dazzling-squirrel-1b41bc.netlify.app/21/" target="_blank" style="text-decoration: none;">
                     <img src="스크린샷 2025-01-18 133745.png" 
                          style="height: 30px; width: 1600px;" alt="Fence" title="이웃집넘어가기">
                 </a>
+                </div>
                 
         </body>
 
